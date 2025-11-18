@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT_ARAMIS // KELWIN_G.F. // QUANTUM_CONSTRUCT</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    
+</head>
+<body>
+    
+    <div id="background-grid"></div>
+    <div id="static-noise"></div>
+
+    <div id="system-boot-sequence">
+        <div class="boot-logo">ARAMIS<span class="dot">.</span></div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p class="boot-message">INITIALIZING QUANTUM CONSTRUCT // LOADING_DATA <span class="blink">_</span></p>
+    </div>
+
+    <div id="hud-overlay">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        
+        <div class="hud-info-panel top-info">
+            <span class="hud-label">STATUS:</span> <span class="hud-value active">ONLINE</span>
+        </div>
+        <div class="hud-info-panel bottom-info">
+            <span class="hud-label">SYNC:</span> <span class="hud-value" id="system-clock">00:00:00</span>
+        </div>
+        <div class="hud-info-panel right-info">
+            <span class="hud-label rotate-label">PROJECT_ARAMIS // K.G.F.</span>
+        </div>
+    </div>
+    
+    <div id="custom-cursor"></div>
+
+    <main id="main-interface" class="no-scroll">
+        
+        <section id="hero-unit" class="interface-section full-height">
+            <div class="section-content hero-content">
+                <p class="data-tag">[IDENTIFIER: NEO-ARCHITECT]</p>
+                <h1 class="main-title glitch-effect" data-text="KELWIN_G.F.">KELWIN_G.F.</h1>
+                <p class="sub-title">SOFTWARE DEVELOPMENT // FULL-STACK // DATA INTEGRITY</p>
+                <div class="action-module">
+                    <a href="#about-unit" class="command-btn primary">ACCESS PROFILE</a>
+                    <a href="#projects-unit" class="command-btn secondary">VIEW DATANODES</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-unit" class="interface-section">
+            <div class="section-content">
+                <h2 class="section-header">01 // IDENTITY_MATRIX <span class="header-line"></span></h2>
+                <div class="about-flex-container">
+                    <div class="profile-display glass-panel">
+                        <img src="./images/Kelwin.png" alt="Kelwin G.F. Avatar" class="profile-avatar">
+                        <div class="profile-metadata">
+                            <p>LOCATION: GLOBAL GRID // NODE_BRAZIL</p>
+                            <p>STATUS: OPTIMAL <span class="active-dot"></span></p>
+                        </div>
+                    </div>
+                    <div class="bio-module">
+                        <p class="data-log">// BIOGRAPHY STREAM INITIATED:</p>
+                        <p class="text-block">
+                            Eu sou desenvolvedor Full-Stack com foco na criação de sistemas robustos e funcionais. Minha base de conhecimento reside em <span class="highlight-text">Java (com Spring Boot para APIs)</span>, <span class="highlight-text">JavaScript</span> e <span class="highlight-text">Python</span>, combinados com a estrutura web essencial de <span class="highlight-text">HTML e PHP</span>.
+                        </p>
+                        <p class="text-block">
+                            Tenho experiência em modelagem e gerenciamento de dados utilizando **MySQL Workbench** e integração de serviços através de **APIs REST**. Meu objetivo é aplicar meu conhecimento técnico em projetos que exijam performance e integridade de dados.
+                        </p>
+                        <div class="skill-grid">
+                            <h3>// CORE_COMPETENCIES (LINGUAGENS)</h3>
+                            <div class="skill-item">JAVA / SPRING BOOT <span class="skill-level">[Nível Médio]</span></div>
+                            <div class="skill-item">PYTHON <span class="skill-level">[Nível Médio]</span></div>
+                            <div class="skill-item">JAVASCRIPT / HTML / PHP <span class="skill-level">[Nível Médio]</span></div>
+                            <div class="skill-item">BANCO DE DADOS (MY SQL) <span class="skill-level">[Nível Médio]</span></div>
+                        </div>
+                        
+                        <div class="skill-grid" style="margin-top: 30px;">
+                            <h3>// PLATAFORMS & TOOLS (FERRAMENTAS)</h3>
+                            <div class="skill-item">IDE: VSCode / IntelliJ / Eclipse / MyWorkspaceSQL <span class="skill-level">[Médio]</span></div>
+                            <div class="skill-item">VERSIONAMENTO & DEPLOY: GitHub / Vercel / Pages <span class="skill-level">[Médio]</span></div>
+                            <div class="skill-item">DESIGN & PRODUTIVIDADE: Figma / VSCode / Copilot / Figma-Maker / Figma-Community <span class="skill-level">[Proficiente]</span></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-unit" class="interface-section">
+            <div class="section-content">
+                <h2 class="section-header">02 // DATANODES_INDEX <span class="header-line"></span></h2>
+                <div class="projects-grid">
+                    <a href="https://github.com/Kelwin-max/DATA_AUTOMATION_HUB.git" target="_blank" class="project-card glass-panel">
+                        <span class="project-id">01 //</span>
+                        <h3>DATA_AUTOMATION_HUB</h3>
+                        <p class="project-description">O objetivo principal é demonstrar a capacidade de manipular, limpar e transformar grandes volumes de dados de forma eficiente, ideal para projetos de Data Processing ou automação de relatórios.</p>
+                        <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>API</span></div>
+                    </a>
+                    
+                    <a href="https://github.com/Kelwin-max/LEGACY_SYSTEM_MIGRATE.git" target="_blank" class="project-card glass-panel">
+                        <span class="project-id">03 //</span>
+                        <h3>LEGACY_SYSTEM_MIGRATE</h3>
+                        <p class="project-description">Aplicação Web Full-Stack utilizando HTML/CSS/JavaScript no frontend e PHP para o lado do servidor, com persistência de dados.</p>
+                        <div class="project-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>PHP</span></div>
+                    </a>
+                    
+                    <a href="login-page-three-sable.vercel.app" target="_blank" class="project-card glass-panel">
+                        <span class="project-id">04 //</span>
+                        <h3>PAGINA Login</h3>
+                        <p class="project-description">Criação de uma pagina de cadastro interativa</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>Figma</span></div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-unit" class="interface-section">
+            <div class="section-content">
+                <h2 class="section-header">03 // COMMS_LINK <span class="header-line"></span></h2>
+                <div class="contact-module glass-panel">
+                    <form id="contact-form" action="https://formspree.io/f/SEU_ID_DO_FORMSPREE" method="POST">
+                        <div class="form-field">
+                            <label for="name">NAME_MODULE:</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your identifier">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">ACCESS_KEY (EMAIL):</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter secure email address">
+                        </div>
+                        <div class="form-field">
+                            <label for="message">TRANSMISSION_DATA:</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Compose your encrypted message"></textarea>
+                        </div>
+                        <button type="submit" class="command-btn primary full-width">SEND TRANSMISSION</button>
+                    </form>
+
+                    <div class="social-channels">
+                        <p class="data-tag">// ENCRYPTED CHANNELS</p>
+                        <div class="social-grid">
+                            <a href="https://github.com/Kelwin-max" target="_blank" class="social-icon-unit"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kelwin-tecnico-desenvolvimento-de-sistemas" target="_blank" class="social-icon-unit"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:kelwingilfernandes18@gmail.com" class="social-icon-unit"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="system-footer">
+        <p>PROJECT_ARAMIS // QUANTUM_CONSTRUCT v1.0 // ALL RIGHTS RESERVED BY K.G.F. ENTERPRISES</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
